@@ -1,0 +1,17 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100vw;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 0;
+
+    & span {
+        color: #74b7ff;
+    }
+}
