@@ -4,11 +4,18 @@ import React, { useState } from 'react';
 const TaskItem = ({ task, handleComplete, handleDelete }) => {
   const [completed, setCompleted] = useState(false);
 
+  const [clicked, setClicked] = useState(false);
+  const complete = () => {
+      setClicked(!clicked);
+  };
+
   return (
-    <li style={{ textDecoration: completed ? 'line-through' : 'none' }} className='tasklist'>
-      <p className='task'>{task.name}</p>
-      <button onClick={() => handleComplete()} className='btn-completado'>✔</button>
-      <button onClick={() => handleDelete()} className='btn-borrar'>X</button>
+    <li className='tasklist'>
+      <p style={{ textDecoration: clicked ? 'line-through' : 'none' }} className='task'>{task.name}</p>
+      <div>
+        <button onClick={() => complete()} className='btn-completado'>✔</button>
+        <button onClick={() => handleDelete()} className='btn-borrar'>X</button>
+      </div>
     </li>
   );
 };
