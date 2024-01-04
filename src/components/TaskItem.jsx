@@ -12,7 +12,7 @@ const TaskItem = ({ task, handleComplete, handleDelete }) => {
   return (
     <li className='tasklist'>
       <p style={{ textDecoration: clicked ? 'line-through' : 'none' }} className='task'>{task.name}</p>
-      <div>
+      <div className='tasklist-btns'>
         <button onClick={() => complete()} className='btn-completado'>✔</button>
         <button onClick={() => handleDelete()} className='btn-borrar'>X</button>
       </div>
