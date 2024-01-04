@@ -1,17 +1,18 @@
-footer {
-    position: fixed;
-    bottom: 0;
+header {
+    position: absolute;
+    top: 0px;
     background-color: black;
     width: 100%;
     text-align: center;
+    margin: auto;
 }
 
-.footer-content {
+.header-content {
     width: 90%;
     margin: auto;
 }
 
-footer h2 {
+header h2 {
     font-size: 18px;
     font-weight: 400;
     padding: 5px 0;

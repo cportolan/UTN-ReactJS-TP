@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TaskList from './TaskList';
 import TaskForm from './TaskForm';
-import Footer from './Footer';
+import Header from './Header';
 import Home from './Home'
 
 const App = () => {
@@ -32,10 +32,10 @@ const App = () => {
 
   return (
     <div className='App'>
+      <Header />
       <Home />
       <TaskForm addTask={addTask} />
       <TaskList tasks={tasks} handleComplete={handleComplete} handleDelete={handleDelete} />
-      <Footer />
     </div>
   );
 };

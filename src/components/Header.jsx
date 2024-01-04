@@ -1,11 +1,11 @@
-import '../styles/Footer.css'
+import '../styles/Header.css'
 
-export default function Footer() {
+export default function header() {
     return(
-        <footer>
-            <div className="footer-content">
+        <header>
+            <div className="header-content">
                 <h2>Aplicación web desarrollada por <a href="https://cristianportolan.vercel.app/" target='_blank'>Cristian Portolan</a>.</h2>
             </div>
-        </footer>
+        </header>
     )
 }
